@@ -18,4 +18,8 @@ elif size == "Grande":
 elif urgency == "si" and size == "Grande":
     costo_final4 = ( 10 + (weight*2.5) + (distance*0.5))+ 80
     print("Como el paquete es urgente de entregar y es Grande tiene un recargo de Q80")
-    print()
+    print("El costo final de su envio es de: ", costo_final4)
+else:
+    costo_final5 = 10 + (weight*2.5) + (distance*0.5)
+    print(" su paquete no tiene ningun recargo ni descuento")
+    print("El costo final de su paquete es de: ", costo_final5)
