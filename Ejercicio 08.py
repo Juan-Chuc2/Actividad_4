@@ -9,3 +9,13 @@ elif  first_chord == "Este" and second_chord == "Oeste ":
     print("recto hacia la izquierda, llega al oeste")
 elif  first_chord == "Oeste" and second_chord == "Este ":
     print("recto hacia la derecha, llega al este")
+elif (first_chord == "Norte" and second_chord == "Este") or (first_chord == "Este" and second_chord == "Norte"):
+    print("noreste")
+elif (first_chord == "Norte" and second_chord == "Oeste") or (first_chord == "Oeste" and second_chord == "Norte"):
+    print("noroeste")
+elif (first_chord == "Sur" and second_chord == "Este") or (first_chord == "Este" and second_chord == "Sur"):
+    print("Sureste")
+elif (first_chord == "Sur" and second_chord == "Oeste") or (first_chord == "Oeste" and second_chord == "Sur"):
+    print("Suroeste")
+else:
+    print("Datos incorrectos")
