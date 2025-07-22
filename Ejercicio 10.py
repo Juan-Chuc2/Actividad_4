@@ -23,3 +23,7 @@ else:
             print("La segunda fecha es mayor.")
         else:
             print("Ambas fechas son iguales.")
+if month1 == month2 and year1 == year2:
+    print("Están en el mismo mes y año.")
+else:
+    print("No están en el mismo mes y año.")
