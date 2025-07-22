@@ -11,3 +11,12 @@ elif  is_estudent!="no":
         print("acceso permitido Usted por ser estudiante paga Q35")
     else:
         print("verifique que haya escrito todo bien.")
+elif is_estudent=="no":
+    if  day_of_the_week=="miercoles":
+        print("acceso permitido por ser miercoles ud entra al 2x1 y paga solo Q50")
+    elif  is_estudent =="si":
+        print("Acceso permitido por ser miercoles entra al 2x1 y por ser estudiante solo paga Q35")
+    else:
+        print("verifique si escribio correctamente todo")
+else:
+    print("verifique sus datos")
