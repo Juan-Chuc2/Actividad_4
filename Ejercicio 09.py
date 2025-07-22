@@ -1,21 +1,13 @@
-print("Bienvenido a la Calculadora de rumbo entre puntos cardinales")
-first_chord =str(input("Ingrese la pimera cordenada")).capitalize()
-second_chord = str(input("Ingrese la segunda cordenada")).capitalize()
-if first_chord == "Norte" and second_chord == "Sur ":
-    print("Rectpo hacia abajo, llega al sur")
-elif first_chord == "Sur" and second_chord == "Norte":
-    print("recto hacia arriba, llega al norte ")
-elif  first_chord == "Este" and second_chord == "Oeste ":
-    print("recto hacia la izquierda, llega al oeste")
-elif  first_chord == "Oeste" and second_chord == "Este ":
-    print("recto hacia la derecha, llega al este")
-elif (first_chord == "Norte" and second_chord == "Este") or (first_chord == "Este" and second_chord == "Norte"):
-    print("noreste")
-elif (first_chord == "Norte" and second_chord == "Oeste") or (first_chord == "Oeste" and second_chord == "Norte"):
-    print("noroeste")
-elif (first_chord == "Sur" and second_chord == "Este") or (first_chord == "Este" and second_chord == "Sur"):
-    print("Sureste")
-elif (first_chord == "Sur" and second_chord == "Oeste") or (first_chord == "Oeste" and second_chord == "Sur"):
-    print("Suroeste")
-else:
-    print("Datos incorrectos")
+print("Bienvenido al simulador de entradas al cine con validacion multiple")
+age = int(input("Ingrese su edad "))
+day_of_the_week =str(input("Ingrese que dia de la semana es ")).strip().lower()
+is_estudent = str(input("Usted es estudiante ")).strip().lower()
+if age < 13:
+    print("Usted es menor de edad, acceso al cine denegado")
+elif  is_estudent!="no":
+    if  day_of_the_week=="miercoles":
+        print("acceso permitido usted debe cancelar Q50")
+    elif is_estudent =="si":
+        print("acceso permitido Usted por ser estudiante paga Q35")
+    else:
+        print("verifique que haya escrito todo bien.")
