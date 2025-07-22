@@ -34,3 +34,20 @@ if fecha_valida:
     K = año % 100
     J = año // 100
     h = (q + (13 * (m + 1)) // 5 + K + (K // 4) + (J // 4) + 5 * J) % 7
+    if h == 0:
+        dia_nombre = "sábado"
+    elif h == 1:
+        dia_nombre = "domingo"
+    elif h == 2:
+        dia_nombre = "lunes"
+    elif h == 3:
+        dia_nombre = "martes"
+    elif h == 4:
+        dia_nombre = "miércoles"
+    elif h == 5:
+        dia_nombre = "jueves"
+    elif h == 6:
+        dia_nombre = "viernes"
+    print("La fecha {:02d}/{:02d}/{} fue un {}".format(dia, mes_original, año_original, dia_nombre))
+else:
+    print("La fecha ingresada no es válida.")
